@@ -42,11 +42,8 @@ public class UsersResource {
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public User create(@PathParam(value = "id") Long id) {
-		User user = new User();
-		user.setId(id);
-		user.setName("ThinhPT");
-		return user;
+	public User create(User bean) {
+		return bean;
 	}
 
 	/*
